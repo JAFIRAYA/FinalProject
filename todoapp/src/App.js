@@ -15,7 +15,7 @@ const App = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/todos/${userEmail} `)
+      const response = await fetch(`https://backendtodo-zfnt.onrender.com/todos/${userEmail} `)
       const json = await response.json()
       setTasks(json)
     } catch (err) {
